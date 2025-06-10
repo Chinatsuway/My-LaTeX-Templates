@@ -16,7 +16,6 @@
 \RequirePackage{newtxmath}
 \RequirePackage{xcolor}
 \RequirePackage{multirow}
-\RequirePackage{Booktabs}
 \RequirePackage{listings}
 
 \RequirePackage{caption}
