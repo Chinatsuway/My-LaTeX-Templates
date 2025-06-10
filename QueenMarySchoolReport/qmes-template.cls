@@ -15,8 +15,18 @@
 \RequirePackage{newtxtext}
 \RequirePackage{newtxmath}
 \RequirePackage{xcolor}
+\RequirePackage{multirow}
+\RequirePackage{Booktabs}
 \RequirePackage{listings}
-\RequirePackage[colorlinks,linkcolor=black]{hyperref}
+
+\RequirePackage{caption}
+\captionsetup[table]{font=small} % Set captions to small size
+\captionsetup[lstlisting]{font=small}
+\captionsetup[figure]{font=small}
+
+
+
+\RequirePackage[colorlinks,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
 
 \geometry{a4paper,left=25mm,right=20mm,top=25mm,bottom=25mm}
 

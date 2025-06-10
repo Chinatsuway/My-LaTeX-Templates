@@ -49,6 +49,32 @@ title page
 \addstudent{your team parter's name}{his/her student number}
 \end{lstlisting}
 
+\newpage{}
+\subsection{Fig and Table}
+Here we shows the example of Table and Figure. Notably, we fixed an issue where
+the font size of the headers for legends and tables (and, of course, code
+blocks) was incorrect.
+\begin{table}[h!]
+    \centering
+    \caption{Example of Table}
+    \label{table:1}
+    \begin{tabular}{ccc}
+        \midrule
+        Animal & Food  & Size   \\
+        \cmidrule(lr){1-3}
+        dog    & meat  & medium \\
+        horse  & hay   & large  \\
+        frog   & flies & small  \\
+        \midrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.2\textwidth]{./figure/LOGO.jpg}
+    \caption{LOGO fig}
+\end{figure}
+
 \subsection{Listings}
 Example of implementing code blocks throught listings is below:
 
