@@ -50,7 +50,7 @@ title page
 \end{lstlisting}
 
 \newpage{}
-\subsection{Fig and Table}
+\subsection{Figures and Tables}
 Here we shows the example of Table and Figure. Notably, we fixed an issue where
 the font size of the headers for legends and tables (and, of course, code
 blocks) was incorrect.
@@ -60,7 +60,6 @@ blocks) was incorrect.
 \begin{table}[h!]
     \centering
     \caption{Example of Table} 
-    \label{table:1}
     \begin{tabular}{ccc}
         \hline
         Animal & Food  & Size   \\
@@ -80,6 +79,7 @@ blocks) was incorrect.
     \caption{LOGO fig}
 \end{figure}
 
+\newpage{}
 \subsection{Listings}
 Example of implementing code blocks throught listings is below:
 
@@ -100,4 +100,16 @@ Here shows implement code blocks throught include code file:
 \newpage{}
 \section{Customization of Template}
 You can futher customize your document by modifying some parameters in the $qmes-template.cls$.
+
+\subsection{Caption Design}
+Here, users can customize the font of the title in the floating environment (such as in the chart), as shown below. The default title font in the template is one size smaller than the main text font. In addition to the already displayed $font$, there are also parameters such as $margin$ and $labelfont$ that can be set.
+\includecode[caption={Settings of Caption in \.cls File}]{src/caption.tex}
+
+\subsection{Hyperlink and References Design}
+The $hyperref$ package defines the colors of hyperlinks and reference symbols in an article. For the simplicity of the interface, the template is set to black by default.
+\includecode[caption={Setting of Hyperlinks and Cites}]{src/hyperref.tex}
+
+\subsection{Footnote Design}
+In the shown code, users can conveniently modify the top and bottom of the page.
+\includecode[caption={The Head and Footnote Settings in \.cls File}]{src/fancyhf.tex}
 \end{document}
